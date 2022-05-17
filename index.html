@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <title>Sophie Vieillard - Portfolio</title>
+	    <meta name="keywords" content="community manager, cm, naturopathie, phytothérapie, aromathérapie"></meta>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" href="./profile-picture.jpeg" />
+	    <link rel="stylesheet" type="text/css" href="./style.css">
+	    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+	</head>
+	<body>
+    <div class="menu menu-closed">
+      <div class="menu-icon"></div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#profile">
+              Profil
+            </a>
+          </li>
+          <li>
+            <a href="#formation">
+              Formation
+            </a>
+          </li>
+          <li>
+            <a href="#experiences">
+              Experiences
+            </a>
+          </li>
+          <li>
+            <a href="#realisations">
+              Réalisations
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#profile">
+              Profil
+            </a>
+          </li>
+          <li>
+            <a href="#formation">
+              Formation
+            </a>
+          </li>
+          <li>
+            <a href="#experiences">
+              Experiences
+            </a>
+          </li>
+          <li>
+            <a href="#realisations">
+              Réalisations
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="profile" class="block">
+      <div class="block__content profile">
+        <div class="profile__block description">
+          <h1>Community <br /> Manager</h1>
+          <p>Bonjour, je m'appelle Sophie ! <br />Forte de mon diplôme recemment acquis de Community Manager, je suis à la recherche d'opportunités en tant que Freelance, alors n'hésitez pas à me contacter :)</p>
+          <a class="button" href="mailto: sophie.vieillard@hotmail.fr" target="_blank">Envoyez moi un mail !</a>
+          <br />
+          <br />
+          <div class="social-networks">
+            <span> ou contactez-moi via mes réseaux sociaux </span>
+            <ul>
+              <li>
+                <a href="">
+                  <img src="./instagram.png" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./linkedin.png" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="profile__block profile-picture"></div>
+      </div>
+    </div>
+    <div id="formation" class="block">
+      <div class="block__content">
+        Formation
+      </div>
+    </div>
+    <div id="experiences" class="block">
+      <div class="block__content">
+        Experiences
+      </div>
+    </div>
+    <div id="realisations" class="block">
+      <div class="block__content">
+        Réalisations
+      </div>
+    </div>
+	</body>
+  <script>
+    const menu = document.getElementsByClassName('menu')[0];
+    const menuIcon = document.getElementsByClassName('menu-icon')[0];
+
+    menu.addEventListener('click', () => {
+      menu.classList.toggle('menu-closed');
+      menuIcon.classList.toggle('menu-icon--close');
+    });
+  </script>
+</html>
