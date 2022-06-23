@@ -9,7 +9,8 @@
 	    <link rel="stylesheet" type="text/css" href="./style.css">
 	    <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
 	</head>
 	<body>
     <div class="menu menu-closed">
@@ -22,13 +23,8 @@
             </a>
           </li>
           <li>
-            <a href="#formation">
-              Formation
-            </a>
-          </li>
-          <li>
-            <a href="#experiences">
-              Experiences
+            <a href="#competences">
+              Outils & Compétences
             </a>
           </li>
           <li>
@@ -48,13 +44,8 @@
             </a>
           </li>
           <li>
-            <a href="#formation">
-              Formation
-            </a>
-          </li>
-          <li>
-            <a href="#experiences">
-              Experiences
+            <a href="#competences">
+              Outils & Compétences
             </a>
           </li>
           <li>
@@ -65,12 +56,17 @@
         </ul>
       </nav>
     </header>
-    <div id="profile" class="block">
-      <div class="block__content profile">
-        <div class="profile__block description">
+    <div id="profile">
+      <div class="content">
+        <div class="content__col">
           <h1>Community <br /> Manager</h1>
-          <p>Bonjour, je m'appelle Sophie ! <br />Forte de mon diplôme recemment acquis de Community Manager, je suis à la recherche d'opportunités en tant que Freelance, alors n'hésitez pas à me contacter :)</p>
-          <a class="button" href="mailto: sophie.vieillard@hotmail.fr" target="_blank">Envoyez moi un mail !</a>
+          <div class="content__text">
+            <div>
+              <div class="icon icon--paragraph"></div>
+            </div>
+            <p>Bonjour, je m'appelle Sophie ! <br />Forte de mon diplôme recemment acquis de Community Manager, je suis à la recherche d'opportunités en tant que Freelance, alors n'hésitez pas à me contacter :)</p>
+          </div>
+          <a class="button" href="mailto: sophie.vieillard@hotmail.fr" target="_blank">Envoyez moi un mail !<div class="icon icon--mail"></div></a>
           <br />
           <br />
           <div class="social-networks">
@@ -89,21 +85,104 @@
             </ul>
           </div>
         </div>
-        <div class="profile__block profile-picture"></div>
+        <div class="content__col profile-picture-wrapper">
+          <img src="./profile-picture.jpeg" alt="profile picture" class="profile-picture" />
+        </div>
       </div>
     </div>
-    <div id="formation" class="block">
-      <div class="block__content">
-        Formation
+    <div id="competences">
+      <div class="content">
+        <div class="content__col">
+          <ul class="skills">
+            <li class="skill">
+              <div class="skill__icon">
+                <div class="icon icon--social-media"></div>
+              </div>
+              <span>Stratégie <br /> réseaux sociaux</span>
+            </li>
+            <li class="skill">
+              <div class="skill__icon">
+                <div class="icon icon--benchmark"></div>
+              </div>
+              <span>Benchmark</span>
+            </li>
+            <li class="skill">
+              <div class="skill__icon">
+                <div class="icon icon--copywriting"></div>
+              </div>
+              <span>Copywriting</span>
+            </li>
+            <li class="skill">
+              <div class="skill__icon">
+                <div class="icon icon--kpis"></div>
+              </div>
+              <span>Analyse <br/> & Suivi KPIs</span>
+            </li>
+            <li class="skill">
+              <div class="skill__icon">
+                <div class="icon icon--brush"></div>
+              </div>
+              <span>Création charte graphique & visuels</span>
+            </li>
+          </ul>
+        </div>
+        <div class="separator"></div>
+        <div class="content__col">
+          <ul class="tools">
+            <li>
+              <ul>
+                <li class="tool-skill tool-skill--filled"></li>
+                <li class="tool-skill"></li>
+                <li class="tool-skill"></li>
+              </ul>
+              Première Pro
+            </li>
+            <li>
+              <ul>
+                <li class="tool-skill tool-skill--filled"></li>
+                <li class="tool-skill tool-skill--filled"></li>
+                <li class="tool-skill"></li>
+              </ul>
+              Photoshop
+            </li>
+            <li>
+              <ul>
+                <li class="tool-skill tool-skill--filled"></li>
+                <li class="tool-skill tool-skill--filled"></li>
+                <li class="tool-skill"></li>
+              </ul>
+              Illustrator
+            </li>
+            <li>
+              <ul>
+                <li class="tool-skill tool-skill--filled"></li>
+                <li class="tool-skill tool-skill--filled"></li>
+                <li class="tool-skill tool-skill--filled"></li>
+              </ul>
+              Canva
+            </li>
+            <li>
+              <ul>
+                <li class="tool-skill tool-skill--filled"></li>
+                <li class="tool-skill tool-skill--filled"></li>
+                <li class="tool-skill tool-skill"></li>
+              </ul>
+              Mailchimp
+            </li>
+            <li>
+              <ul>
+                <li class="tool-skill tool-skill--filled"></li>
+                <li class="tool-skill tool-skill--filled"></li>
+                <li class="tool-skill tool-skill--filled"></li>
+              </ul>
+              Figma
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div id="experiences" class="block">
-      <div class="block__content">
-        Experiences
-      </div>
-    </div>
-    <div id="realisations" class="block">
-      <div class="block__content">
+    <div id="realisations">
+      <div class="content">
         Réalisations
       </div>
     </div>
