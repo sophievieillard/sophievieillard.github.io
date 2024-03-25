@@ -1,6 +1,6 @@
 :root {
-    --pink: #f1b18a;
-    --green: #b7e4c7;
+    --pink: #e29578;
+    --green: #d2ddcf;
     --darken-green: #328080;
     --beige: #faf6ed;
     --mobileMaxWidth: 700px;
@@ -415,6 +415,35 @@ header > nav > ul > li:hover {
 
 .tool-skill:not(:last-child) {
   margin-right: .5rem;
+}
+
+video, .owl-carousel .owl-item img {
+  border: solid 2px var(--green);
+  border-radius: 4px;
+  width: 400px;
+  padding: 20px;
+}
+
+.owl-stage {
+  display: flex;
+}
+
+.owl-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.owl-carousel .owl-item img {
+  width: 400px !important;
+}
+
+.owl-wrapper {
+  padding-bottom: 60px;
+}
+
+.owl-stage {
+  display: flex;
 }
 
 @media all and (max-width: 1285px) {

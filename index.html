@@ -11,6 +11,10 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="./owl/owl.carousel.min.css">
+      <link rel="stylesheet" type="text/css" href="./owl/owl.theme.green.min.css">
+      <script src="./owl/jquery.js"></script>
+      <script src="./owl/owl.carousel.min.js"></script>
 	</head>
 	<body>
     <div class="menu menu-closed">
@@ -64,21 +68,16 @@
             <div>
               <div class="icon icon--paragraph"></div>
             </div>
-            <p>Bonjour, je m'appelle Sophie ! <br />Forte de mon diplôme recemment acquis de Community Manager, je suis à la recherche d'opportunités en tant que Freelance, alors n'hésitez pas à me contacter :)</p>
+            <p>Bonjour, je m'appelle Sophie ! <br />Forte de mon diplôme acquis de Community Manager, je suis à la recherche d'opportunités en tant que Freelance, alors n'hésitez pas à me contacter :)</p>
           </div>
           <a class="button" href="mailto: sophie.vieillard@hotmail.fr" target="_blank">Envoyez moi un mail !<div class="icon icon--mail"></div></a>
           <br />
           <br />
           <div class="social-networks">
-            <span> ou contactez-moi via mes réseaux sociaux </span>
+            <span> ou contactez-moi via LinkedIn</span>
             <ul>
               <li>
-                <a href="">
-                  <img src="./instagram.png" />
-                </a>
-              </li>
-              <li>
-                <a href="">
+                <a href="https://www.linkedin.com/in/sophie-vieillard">
                   <img src="./linkedin.png" />
                 </a>
               </li>
@@ -86,7 +85,7 @@
           </div>
         </div>
         <div class="content__col profile-picture-wrapper">
-          <img src="./profile-picture.jpeg" alt="profile picture" class="profile-picture" />
+          <img src="./assets/profile.png" alt="profile picture" class="profile-picture" />
         </div>
       </div>
     </div>
@@ -183,7 +182,29 @@
     </div>
     <div id="realisations">
       <div class="content">
-        Réalisations
+        <div>Voici quelques exemples de réalisations (Feed Instagram, LinkedIn) réalisés pour mes clients</div>
+      </div>
+      <div class="owl-wrapper">
+        <div class="owl-carousel owl-theme">
+          <video height="400px" controls="controls">
+            <source src="./assets/HR 1.mp4" type="video/mp4" />
+          </video>
+          <video height="400px" controls="controls">
+            <source src="./assets/HR 2.mp4" type="video/mp4" />
+          </video>
+          <video height="400px" controls="controls">
+            <source src="./assets/HR 3.mp4" type="video/mp4" />
+          </video>
+          <video height="400px" controls="controls">
+            <source src="./assets/CBD.mp4" type="video/mp4" />
+          </video>
+          <img src="assets/1.png" />
+          <img src="assets/2.png" />
+          <img src="assets/3.png" />
+          <img src="assets/4.png" />
+          <img src="assets/5.jpg" />
+          <img src="assets/6.jpg" />
+        </div>
       </div>
     </div>
 	</body>
@@ -194,6 +215,20 @@
     menu.addEventListener('click', () => {
       menu.classList.toggle('menu-closed');
       menuIcon.classList.toggle('menu-icon--close');
+    });
+
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+        nav: true,
+        responsive: {
+          480 : {
+            items : 1,
+          },
+          768 : {
+            items : 3,
+          }
+        }
+      });
     });
   </script>
 </html>
